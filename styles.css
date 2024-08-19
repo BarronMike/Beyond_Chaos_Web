@@ -10,3 +10,18 @@ body{
   border-radius: 12px;
   font-size: 25px;
 }
+input[type="radio"] {
+  display: inline-table;
+  width:fit-content;
+  table-layout: Fixed;
+  margin-right: 10px;
+}
+.RadioFields {
+  display: inline-table;
+  table-layout: fixed;
+  width:100%;
+}
+.RadioTitle {
+  display:inline-table;
+  width: 8em;
+}
