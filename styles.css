@@ -24,4 +24,5 @@ input[type="radio"] {
 .RadioTitle {
   display:inline-table;
   width: 8em;
+  text-align:center;
 }
