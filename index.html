@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Just building a shell for now -->
+    <title>Beyond Chaos Web Randomizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Welcome to the Beyond Chaos Web Randomizer!</h1>
+      <p>You'll need to upload a copy of your v1.0 FF6 Rom, then choose Randomize below after choosing your flagset</p>
+      <button class="GoButton" type=Button>Randomize!</button>
+      <!-- Start of the flagset selection checkboxes, value is the flag for the randomizer string -->
+      <h2>Core Flags</h2>
+      <input class="flagBox" type="checkbox" id="flagB" name="FlagB" value="b">
+      <label for="flagB"><b>B</b> - Make the game more balanced by removing exploits such as Joker Doom, Vanish/Doom, and the Evade/Mblock bug.</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagC" name="FlagC" value="c">
+      <label for="flagC"><b>C</b> - Randomize Palettes and Names</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagD" name="FlagD" value="d">
+      <label for="flagD"><b>D</b> - Randomize Final Dungeon</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagE" name="FlagE" value="e">
+      <label for="flagE"><b>E</b> - Randomize Esper Spells and Level-up Bonuses</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagF" name="FlagF" value="f">
+      <label for="flagF"><b>F</b> - Randomize Enemy Formations</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagG" name="FlagG" value="g">
+      <label for="flagG"><b>G</b> - Randomize Dances</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagI" name="FlagI" value="i">
+      <label for="flagI"><b>I</b> - Randomize Stats of Equippable Items</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagJ" name="FlagJ" value="j">
+      <label for="flagJ"><b>J</b> - Randomize Phantom Forest</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagK" name="FlagK" value="k">
+      <label for="flagK"><b>K</b> - Randomize Zozo Clock</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagL" name="FlagL" value="l">
+      <label for="flagL"><b>L</b> - Randomize Blitz Inputs</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagM" name="FlagM" value="m">
+      <label for="flagM"><b>M</b> - Randomize Enemy stats</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagN" name="FlagN" value="n">
+      <label for="flagN"><b>N</b> - Randomize Window background colors</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagO" name="FlagO" value="o">
+      <label for="flagO"><b>O</b> - Randomize Character Battle Commands</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagP" name="FlagP" value="p">
+      <label for="flagP"><b>P</b> - Randomize Palettes of Spells/Weapons </label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagQ" name="FlagQ" value="q">
+      <label for="flagQ"><b>Q</b> - Randomize Equippable Items/Initial Stats</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagR" name="FlagR" value="r">
+      <label for="flagR"><b>R</b> - Randomize World of Ruin Character Locations</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagS" name="FlagS" value="s">
+      <label for="flagS"><b>S</b> - Swap Character Graphics</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagT" name="FlagT" value="t">
+      <label for="flagT"><b>T</b> - Randomize Treasure (Chests, Colosseum, Shops, Enemy Drops) </label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagU" name="FlagU" value="u">
+      <label for="flagU"><b>U</b> - Umaro Risk (Someone <b>WILL</b> be berserk) </label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagW" name="FlagW" value="w">
+      <label for="flagW"><b>W</b> - Generate New Commands for Characters, Replacing Base Ones</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagY" name="FlagY" value="y">
+      <label for="flagY"><b>Y</b> - Randomize Magicite Locations</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagZ" name="FlagZ" value="z">
+      <label for="flagZ"><b>Z</b> - Sprint Shoes Always On</label><br>
+      
+      <!-- Start of Aesthetic Flags -->
+      <input class="flagBox" type="checkbox" id="flagBNW" name="FlagBNW" value="bravenudeworld">
+      <label for="flagBNW"><b>Bravenudeworld</b> - All Characters Use Esper Terra Sprite</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagKupo" name="FlagKupo" value="kupokupo">
+      <label for="flagKupo"><b>Kupokupo</b> - All Party members are moogles, except mog. Combo with partyparty to make all characters moogles except Mog, Esper Terra, and Imps</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagMakeover" name="FlagMakeover" value="makeover">
+      <label for="flagMakeover"><b>Makeover</b> - Some Sprites are Replaced With New Ones (E.G Cecil/Zero Suit Samus)</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagNoVanilla" name="FlagNoVanilla" value="novanilla">
+      <label for="flagNoVanilla"><b>NoVanilla</b> - With 'makeover,' No Original Sprites From FF6 Will Appear</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagFrVanilla" name="FlagFrVanilla" value="frenchvanilla">
+      <label for="flagFrVanilla"><b>FrenchVanilla</b> - With 'makeover,' Original Sprites From FF6 Will Appear With Equal Weighting to New Sprites</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagCloneParty" name="FlagCloneParty" value="cloneparty">
+      <label for="flagCloneParty"><b>CloneParty</b> - With 'makeover,' Randomzier Will Try To Choose Sprite Versions of the Same Character</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagPartyParty" name="FlagPartyParty" value="partyparty">
+      <label for="flagPartyParty"><b>PartyParty</b> - Kefka, Trooper, Banon, Leo, Ghost, Merchant, Esper Terra, and Soldier are Included for Sprite Randomization</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagNAW" name="FlagNAW" value="notawaiter">
+      <label for="flagNAW"><b>NotAWaiter</b> -Up to Kefka at Narshe, the vast majority of mandatory cutscenes are completely removed. Optional cutscenes are not removed</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagAlasDraco" name="FlagAlasDraco" value="alasdraco">
+      <label for="flagAlasDraco"><b>Alas, Draco</b> - Randomizes the sprites of Maria, Draco, Ralse, the Impresario, the flowers Maria throws from the balcony, and the weight Ultros drops, as well as the singing voices and the names of the factions </label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagBB" name="FlagBB" value="bingoboingo">
+      <label for="flagBB"><b>Bingo Boingo</b> - Generates a Bingo table with spells, items, equipment, and enemy squares to check off. Players can set victory requirements like achieving a line, or acquiring a certain number of points. The ROM does not interact with the bingo card </label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagCapsLock" name="FlagCapsLock" value="capslockoff">
+      <label for="flagCapsLock"><b>Caps Lock Off</b> - Names use whatever capitalization is in the name lists instead of all caps.</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagJDM" name="FlagJDM" value="johnnydmad">
+      <label for="flag"><b>Johnny D Mad</b> - Randomizes music with regard to what would make sense in a given location. </label><br>
+      
+      <input class="flagBox" type="checkbox" id="FlagJAC" name="FlagJAC" value="johnnyachaotic">
+      <label for="FlagJAC"><b>Johnny A Chaotic</b> - Randomizes music with no regard to what would make sense in a given location.</label><br>
+      
+      <input class="flagBox" type="checkbox" id="flagMyria" name="FlagMyria" value="z">
+      <label for="flagMyria"><b>Myria Equip</b> - Enable Myria's new Party Equip Screen (NEEDS Partyparty or makeover OR WILL CRASH)</label><br>
+      
+      
+      
+      <!--  -->
+      
+      <script src="script.js"></script>
+  </body>
+</html>
